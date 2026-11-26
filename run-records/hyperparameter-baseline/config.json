@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "VIS_LOW_DIR": "/home/msia/Leeql/EMS_full_dataset/EMS_dataset_train/vis_Low-Light/Visible_LQ",
+    "IR_NOISY_DIR": "/home/msia/Leeql/EMS_full_dataset/EMS_dataset_train/vis_Low-Light/Infrared_gt_noisy1",
+    "RESTORER_CKPT": "/home/msia/Leeql/LYTFusion/Code_CARA/fusion-stagev2/runs_Hyperparameter/source_snapshot/restorer_fixed.pth",
+    "OUT_DIR": "/home/msia/Leeql/LYTFusion/Code_CARA/fusion-stagev2/runs_Hyperparameter/baseline",
+    "SEED": 42,
+    "EPOCHS": 100,
+    "BATCH_SIZE": 16,
+    "NUM_WORKERS": 4,
+    "CROP_SIZE": 256,
+    "LR": 0.0001,
+    "USE_AMP": false,
+    "W_INT": 1.0,
+    "W_GRAD": 10.0,
+    "LAMBDA_FEAT": 0.05,
+    "LAMBDA_CARA": 0.1,
+    "LAMBDA_LOW": 0.2,
+    "BASE_CHANNELS": 32,
+    "RES_SCALE": 0.45,
+    "OUTPUT_BASE": "mean",
+    "REJECT_STRENGTH": 0.6,
+    "SAVE_MODEL_EVERY": 100,
+    "SAVE_SAMPLE_EVERY": 10,
+    "SAVE_BEST_BY_LOSS": false
+  },
+  "experiment": {
+    "id": "baseline",
+    "parameter": "baseline",
+    "value": null,
+    "LAMBDA_CARA": 0.1,
+    "REJECT_STRENGTH": 0.6,
+    "RES_SCALE": 0.45
+  },
+  "source_sha256": {
+    "train_stage2_cara_full.py": "bd8354d41bcd728c7e0e18141b1ad53b13fb8c6612b99226ce2e9ed36169279e",
+    "dataloader_fusion.py": "e83d2bc6fa86441e7267c5c302fb736b0870c0bb7be8c4f531c99f55ef23412a",
+    "model.py": "ee0361903f425a6435cca075cf16dcf576b25b2671bf2d2107e11be146fcf438",
+    "fusion_net_cara_full.py": "e3f8380f3032f730bae8a901b764f9a7f9892ed12e105170719881b460457800",
+    "losses_fusion_cara_full.py": "dc45ad7ae1e8addc13df9e1223f741854702571e7f1f36ef83bf766e6a4c7981",
+    "utils.py": "485e6ea1e494693d6d4a25059072faec3ff55133adca6c6025c6ffb5c9ed6d34",
+    "eval_denoif_metrics.py": "3f67f623891e12d0052b1c5fcae832f27cb14cf87b4b375e96e1ca51fcdfc9a3"
+  },
+  "restorer_sha256": "e1c7b59c9db6d09ad6880c5fb875fd7190bb0b309fc8232ac309d1d37a24dcef"
+}
